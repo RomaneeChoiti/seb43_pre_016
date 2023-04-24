@@ -54,6 +54,16 @@ function App() {
             </div>
           }
         />
+        {/* Newest Tab */}
+        <Route
+          path="/questions?tab=Newest"
+          element={
+            <div className="container">
+              <Sidebar />
+              <QuestionDetail />
+            </div>
+          }
+        ></Route>
         <Route
           path="/questions/:id"
           element={
